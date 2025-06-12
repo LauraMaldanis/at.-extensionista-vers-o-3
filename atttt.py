@@ -19,12 +19,14 @@ while True:
     # Baseado em valores típicos para Hue, Saturação e Brilho
     if v < 40:
         cor = "PRETO"
+        
     elif s < 30 and v > 180:
         cor = "BRANCO"
     elif s < 60 and 40 < v < 180:
         cor = "CINZA"
     elif 5 < h < 22 and s > 100 and v < 150:
         cor = "MARROM"
+        
     elif h < 5 or h >= 170:
         cor = "VERMELHO"
     elif h < 22:
